@@ -5,7 +5,7 @@ export default function(){
     
     return (
         <div id='App'>
-            <h1 className={'Header'}>{`02. Normal CSS (css loader options: {modules: false})`}</h1>
+            <h1 className={'Header'}>{`03. Normal CSS (css loader options: {modules: true})`}</h1>
         </div>
     )
 };

@@ -9,4 +9,4 @@ ex02 component - Component Styling(Working with UI)
 07. React Modal
 
 예제 실행
-npm run debug src={01|02|03|04|...} modules={false|true}
+npm run debug src={01|02|03|04|...} css-modules={false|true}
