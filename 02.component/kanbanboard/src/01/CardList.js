@@ -3,7 +3,7 @@ import Card from './Card';
 
 export default function({title, cards}){
     return (
-        <div class='CardList'>
+        <div className='CardList'>
             <h1>{title}</h1>
             {cards.map((card) => <Card 
                                     key={card.no}

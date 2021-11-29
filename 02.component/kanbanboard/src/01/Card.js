@@ -1,4 +1,6 @@
 import React from 'react';
+import TaskList from './TaskList';
+
 
 export default function({title, description, tasks}) {
     return (
@@ -7,11 +9,7 @@ export default function({title, description, tasks}) {
             <div className='Card__Details'>
                 {description}
             </div>
-            <taskList tasks={tasks} />
-            <div className='TaskList'>
-                <ul>
-                </ul>
-            </div>
+            <TaskList tasks={tasks} />
         </div>
     )
 }
