@@ -3,7 +3,7 @@ import Guestbook from './Guestbook'
 
 export default function(){
     return (
-        <div id='App'>
+        <div>
             <Guestbook />
         </div>
     )
