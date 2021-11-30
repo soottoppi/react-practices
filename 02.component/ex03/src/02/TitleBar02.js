@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function TitelBar02() {
     
-    const onClickHandler = () => {
+    const onClickHandler = (e) => {
         console.log('TitleBar01 clicked')
     }
 
