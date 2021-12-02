@@ -8,13 +8,12 @@ import data from './assets/json/data.json'
 export default function() {
     const [keyword, setKeyword] = useState('');
     const notifyKeywordChanged = (keyword) => {
-      console.log(keyword);
       setKeyword(keyword);
     }
     return (
         <div className={'App'}>
           <RegisterForm />
-          <SearchBar callback={notifyKeywordChanged}/>
+          <SearchBar keyword={keyword} callback={notifyKeywordChanged}/>
           <EmailList keyword={keyword} emails={data}/>
         </div>
     )
