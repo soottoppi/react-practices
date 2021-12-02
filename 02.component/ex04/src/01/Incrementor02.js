@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 export default function ({ begin, step }) {
     const [stateVal, setVal] = useState(begin);
     const [stateStep] = useState(step);
-    setInterval();
 
     return (
         <div>

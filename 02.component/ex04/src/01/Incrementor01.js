@@ -10,20 +10,23 @@ export default class extends Component {
 
     onClickButton(e) {
         // this.state.value = this.state.value + this.props.step;
+        e.target.value === '+' ?
         this.setState({
             val: this.state.val + this.props.step
-        })
+        }) : this.setState({
+            val: this.state.val - this.props.step
+        }) 
     }
     render() {
         return (
             <div>
-                <button onClick={ this.onClickButton.bind(this) }>
+                <button value={'+'} onClick={ this.onClickButton.bind(this) }>
                     <strong>+</strong>
                 </button>
                 {' '}
                 <span>{this.state.val}</span>
                 {' '}
-                <button>
+                <button value={'-'} onClick={ this.onClickButton.bind(this) }>
                     <strong>-</strong>
                 </button>
             </div>
