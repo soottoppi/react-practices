@@ -7,7 +7,7 @@ import modalStyles from "./assets/scss/modal.scss";
 
 Modal.setAppElement('body');
 
-export default function MessageList({messages}) {
+export default function MessageList({messages, notifyMessage}) {
     const refForm = useRef(null);
     // const [isOpen, setIsOpen] = useState(false);
     // const [password, setPassword] = useState('');
@@ -49,10 +49,12 @@ export default function MessageList({messages}) {
 
             // 비밀번호가 틀린 경우
             // jsonResult.data = null
-            setModalData({}, Object.assign(modalData), {title: '...', password: ''})
+            // setModalData(Object.assign({}, modalData, {label: '비밀번호가 일치하지 않습니다', password: ''}));
+
             // 잘 삭제가 된 경우
-            // jsonResult.data = 10;
-            console.log("삭제!!!!", modalData);
+            // jsonResult.data가 10;
+            setModalData({isOpen: false, password:''});
+            notifyMessage.delete(modalData.messageNo);
         }
         catch(err){
             console.error(err);
