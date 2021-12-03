@@ -6,18 +6,16 @@ ex01: Property
     3. Kabanboard - ex01
 ex02
     1. Component Styling
-    2. Kanbanboard - ex02
 ex03
     1. React Event
-    2. Kanbanboard - ex03, ex04
 ex04
     1. state
-    2. ajax
-    3. Kanbanboard - ex06
 ex05
     Conponent Lifecycle
 ex06
     Immutability(불변성) of Component's state
+
+ajax: fetch, axios
 
 emaillist
 gallery
