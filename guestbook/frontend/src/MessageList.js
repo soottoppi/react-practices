@@ -62,8 +62,6 @@ export default function MessageList({messages, notifyMessage}) {
         
     }
 
-    
-
     return (
         <Fragment>
             <ul className={styles.MessageList}>
