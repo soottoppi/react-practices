@@ -10,8 +10,9 @@ import './assets/scss/App.scss'
 export default function App() {
     return (
         <Router>
+
             <Routes>
-                <Route path='/' element={<Main />}/>
+            <Route path='/' element={<Main />}/>
                 <Route path='gallery' element={<Gallery />}/>
                 <Route path='guestbook' element={<Guestbook />}/>
                 <Route path='about' element={<About />}/>
